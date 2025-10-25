@@ -13,7 +13,7 @@ use anyhow::Result;
 use bytes::Bytes;
 use rand::Rng;
 use regex::Regex;
-use serde as de;F
+use serde as de;
 use serde_derive::{Deserialize, Serialize};
 use serde_json;
 use sodiumoxide::base64;
@@ -81,7 +81,7 @@ lazy_static::lazy_static! {
     pub static ref APP_HOME_DIR: RwLock<String> = Default::default();
 }
 
-pub const LINK_DOCS_HOME: &str = "https://.com/docs/en/";
+pub const LINK_DOCS_HOME: &str = "https://dark.com/docs/en/";
 pub const LINK_DOCS_X11_REQUIRED: &str = "https://rustdesk.com/docs/en/manual/linux/#x11-required";
 pub const LINK_HEADLESS_LINUX_SUPPORT: &str =
     "https://github.com/rustdesk/rustdesk/wiki/Headless-Linux-Support";
