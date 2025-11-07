@@ -716,7 +716,8 @@ message AudioFormat {
 }
 
 message AudioFrame { 
-  bytes data = 1; 
+  bytes data = 1;
+  uint32 stream_id = 2;  // 0=primary stream, 1=system audio loopback (stream2)
 }
 
 // Notify peer to show message box.
